@@ -1,20 +1,9 @@
 #!/bin/sh
 WORK_DIR=/home/onyxia/work
+install2.r here
 echo \
 "
-setHook('rstudio.sessionInit', function(newSession) {
- if (newSession)
-  {
-    rstudioapi::applyTheme("Dracula")
-  }
-}, action = 'append')
-
-setHook('rstudio.sessionInit', function(newSession) {
-  if (newSession && identical(getwd(), '${WORK_DIR}'))
-  {
-    message('Activation du dark mode')
-    rstudioapi::applyTheme("Dracula")
-    
-  }
-}, action = 'append')
+.First = function(){
+  rstudioapi::applyTheme("Dracula")
+}
 " >> /home/onyxia/.Rprofile
