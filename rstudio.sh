@@ -3,7 +3,7 @@
 echo \
 "
 setHook('rstudio.sessionInit', function(newSession) {
-    rstudioapi::applyTheme("Dracula")
+    rstudioapi::applyTheme('Dracula')
     message('test')
 }, action = 'append')
 
