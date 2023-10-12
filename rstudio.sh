@@ -4,6 +4,7 @@ echo \
 "
 setHook('rstudio.sessionInit', function(newSession) {
     rstudioapi::applyTheme("Dracula")
+    message('test')
 }, action = 'append')
 
 " >> /home/onyxia/.Rprofile
