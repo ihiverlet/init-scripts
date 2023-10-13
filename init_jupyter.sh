@@ -2,8 +2,6 @@
 
 pip install jupyterthemes
 
-#jt -t oceans16
+jt -t chesterish
 
-jt -t monokai
-
-echo 'fin'
+echo 'chesterish'
