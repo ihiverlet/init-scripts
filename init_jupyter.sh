@@ -1,7 +1,3 @@
 #!/bin/sh
 
-pip install jupyterthemes
-
-jt -t oceans16
-
-echo 'oceans16'
+echo "{'@jupyterlab/apputils-extension:themes': {'theme': 'JupyterLab Dark'}}" >> /opt/mamba/share/jupyter/lab/settings/overrides.json
