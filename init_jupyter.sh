@@ -2,6 +2,6 @@
 
 pip install jupyterthemes
 
-jt -t chesterish
+jt -t oceans16
 
-echo 'chesterish'
+echo 'oceans16'
