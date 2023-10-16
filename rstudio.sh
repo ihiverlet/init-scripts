@@ -1,6 +1,6 @@
 #!/bin/sh
 
-touch ${R_HOME}/etc/Rprofile.site
+echo'toto'
 echo "if (Sys.getenv('DARK_MODE')=='TRUE'){
     setHook('rstudio.sessionInit', function(newSession) {
         rstudioapi::applyTheme("Dracula")
