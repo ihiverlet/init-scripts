@@ -10,6 +10,7 @@ if [[ "$DARK_MODE" == "true" ]]; then
     fi
     if command -v rstudio-server; then
         rm ${R_HOME}/etc/Rprofile.site
+        mkdir ${HOME}/.config/rstudio
         echo  "{\"editor_theme\": \"Dracula\" }" > ${HOME}/.config/rstudio/rstudio.prefs
     fi
 fi
