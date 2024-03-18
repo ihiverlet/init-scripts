@@ -9,9 +9,10 @@ if [[ "$DARK_MODE" == "true" ]]; then
         jq '. + {"workbench.colorTheme": "Default Dark Modern" }' ${HOME}/.local/share/code-server/User/settings.json > ${HOME}/tmp.settings.json  && mv ${HOME}/tmp.settings.json ${HOME}/.local/share/code-server/User/settings.json
     fi
     if command -v rstudio-server; then
+        echo "toto"
         rm ${R_HOME}/etc/Rprofile.site
         mkdir -p ${HOME}/.config/rstudio/
         touch ${HOME}/.config/rstudio/rstudio-prefs.json 
-        jq '. + {"editor_theme": "Dracula" }' ${HOME}/.config/rstudio/rstudio-prefs.json > ${HOME}/work/tmp.rstudio.prefs  && mv ${HOME}/work/tmp.rstudio.prefs ${HOME}/.config/rstudio/rstudio-prefs.json
+        echo "{\"editor_theme\": \"Dracula\" }" > ${HOME}/.config/rstudio/rstudio-prefs.json
     fi
 fi
