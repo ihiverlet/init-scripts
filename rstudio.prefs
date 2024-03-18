@@ -12,7 +12,6 @@ if [[ "$DARK_MODE" == "true" ]]; then
         echo "toto"
         rm ${R_HOME}/etc/Rprofile.site
         mkdir -p ${HOME}/.config/rstudio/
-        touch ${HOME}/.config/rstudio/rstudio-prefs.json 
         echo "{\"editor_theme\": \"Dracula\" }" > ${HOME}/.config/rstudio/rstudio-prefs.json
     fi
 fi
