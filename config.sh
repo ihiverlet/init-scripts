@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#configure bashrc to add aliases
+sudo tee -a /etc/bash.bashrc << EOT
 # kube aliases
 alias k='kubectl'
 alias kubetcl='kubectl'
@@ -31,6 +33,8 @@ alias ga='git add'
 
 # divers
 alias stp='sudo !!'
+
+EOT
 
 # config vim
 sudo tee -a /etc/vim/vimrc << EOT
