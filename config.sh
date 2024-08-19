@@ -22,8 +22,11 @@ alias h='helm'
 alias hl='helm ls'
 
 # keep kube & helm autocompletion with k & h aliases
-complete -o default -F __start_helm h
+complete -o default -F __start_kubectl kubectl
 complete -F __start_kubectl k
+
+complete -o default -F __start_helm helm
+complete -o default -F __start_helm h
 
 # git aliases
 alias gc='git clone'
