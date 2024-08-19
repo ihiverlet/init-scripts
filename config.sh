@@ -16,10 +16,12 @@ alias kex='kubectl exec -it'
 alias kpf='kubectl port-forward'
 
 # helm aliases
+alias h='helm'
 alias hl='helm ls'
-alias hi='helm install'
-alias huni='helm uninstall'
-alias hu='helm upgrade'
+
+# keep kube & helm autocompletion with k & h aliases
+complete -o default -F __start_helm h
+complete -F __start_kubectl k
 
 # git aliases
 alias gc='git clone'
@@ -35,6 +37,7 @@ alias ga='git add'
 alias stp='sudo !!'
 
 EOT
+
 
 # config vim
 sudo tee -a /etc/vim/vimrc << EOT
