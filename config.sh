@@ -28,6 +28,10 @@ complete -o default -F __start_kubectl k
 complete -o default -F __start_helm helm
 complete -o default -F __start_helm h
 
+# watch to keep autocompletion when using
+alias w='watch '
+alias watch='watch '
+
 # git aliases
 alias gc='git clone'
 alias gd='git diff'
