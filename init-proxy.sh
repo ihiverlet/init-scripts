@@ -1,4 +1,6 @@
 #!/bin/sh
+export NO_PROXY=tata
+export http_proxy=toto
 
 env_vars=("NO_PROXY" "no_proxy" "HTTP_PROXY" "http_proxy" "HTTPS_PROXY" "https_proxy")
 
