@@ -23,6 +23,7 @@ alias hl='helm ls'
 
 # keep kube & helm autocompletion with k & h aliases
 complete -o default -F __start_kubectl kubectl
+complete -o default -F __start_kubectl kubetcl
 complete -o default -F __start_kubectl k
 
 complete -o default -F __start_helm helm
