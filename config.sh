@@ -43,7 +43,7 @@ alias gp='git push'
 alias ga='git add'
 
 # divers
-alias stp='sudo !!'
+alias stp='sudo !! '
 
 EOT
 
