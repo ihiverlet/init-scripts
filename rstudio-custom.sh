@@ -26,9 +26,13 @@ options(
   continue = '+++ '    # Continuation prompt
 )
 
+
+# In the context of a console call, the width of the output is set to 120;
 if (interactive()) {
 options(width = 120)
 }
+
+# The .First function allows specific operations to be performed at the start of the R session (here, printing text)
 
 .First <- function(){
 cat('\n Welcome \n\n')
