@@ -26,12 +26,7 @@ setHook('rstudio.sessionInit', function(newSession) {
 
     # Function to execute at R session startup
     .First <- function(){
-    cat("\n Let\'s start !\n\n")
-    }
-
-    # Function to execute at R session ending
-    .Last <- function(){
-    cat("\n Good bye...\n\n")
+    cat(\" Start \")
     }
 
 
