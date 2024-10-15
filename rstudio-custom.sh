@@ -30,5 +30,5 @@ setHook('rstudio.sessionInit', function(newSession) {
     }
 
 
-}, action = 'append')
+}
 " >> /home/onyxia/.Rprofile
