@@ -15,4 +15,14 @@ setHook('rstudio.sessionInit', function(newSession) {
     rstudioapi::executeCommand('layoutConsoleOnRight')
   }
 }, action = 'append')
+
+# Set CRAN mirror
+options(repos = c(CRAN = 'https://cran.rstudio.org'))
+
+# Customize console prompt, digit display, and continuation prompt
+options(
+  prompt = 'R> ',      # Custom prompt
+  digits = 4,          # Limit numeric precision to 4 digits
+  continue = '+++ '    # Continuation prompt
+)
 " >> /home/onyxia/.Rprofile
