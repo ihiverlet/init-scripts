@@ -12,19 +12,6 @@ setHook('rstudio.sessionInit', function(newSession) {
     rstudioapi::applyTheme('Dracula')
     # Console on the right
     rstudioapi::executeCommand('layoutConsoleOnRight')
-    options(scipen=10)
-    options(editor='vim')
-    #Modify prompt cli and modify the number of decimals default
-    options(prompt=\"R> \", digits=4)
-    options(continue= \"+++ \")
-    if (interactive()) {
-      options(width = 120)
-    }
-    
-    # Function to execute at R session startup
-    .First <- function(){
-      cat('Start')
-    }
   }
 }, action = 'append')
 
