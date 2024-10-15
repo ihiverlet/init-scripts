@@ -25,4 +25,12 @@ options(
   digits = 4,          # Limit numeric precision to 4 digits
   continue = '+++ '    # Continuation prompt
 )
+
+if (interactive()) {
+options(width = 120)
+}
+
+.First <- function(){
+cat('\n Welcome \n\n')
+}
 " >> /home/onyxia/.Rprofile
