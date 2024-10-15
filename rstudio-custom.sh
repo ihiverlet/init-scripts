@@ -14,19 +14,19 @@ setHook('rstudio.sessionInit', function(newSession) {
 
 
     options(scipen=10)
-    options(editor="vim")
+    options(editor=\"vim\")
     # define a default mirror 
-    options(repos = c(CRAN = "https://cran.rstudio.org"))
+    options(repos = c(CRAN = \"https://cran.rstudio.org\"))
     #Modify prompt cli and modify the number of decimals default
-    options(prompt="R> ", digits=4)
-    options(continue= "+++ ")
+    options(prompt=\"R> \", digits=4)
+    options(continue= \"+++ \")
     if (interactive()) {
     options(width = 120)
       }
 
     # Function to execute at R session startup
     .First <- function(){
-    cat("\n Let's start !\n\n")
+    cat("\n Let\'s start !\n\n")
     }
 
     # Function to execute at R session ending
