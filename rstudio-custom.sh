@@ -11,6 +11,11 @@
 # Expected parameters : Name of the github repo
 
 # Fetch the parameter
+echo $1
+echo "*"
+echo $2
+echo"**"
+
 GIT_REPO=helm-charts-interactive-services
 
 # Clone repository and give permissions to the onyxia user
