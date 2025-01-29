@@ -59,3 +59,8 @@ set number
 syntax on
 set incsearch
 EOT
+
+#add extension to vscode 
+if command -v code-server; then
+  code-server --install-extension dvirtz.parquet-viewer
+fi
