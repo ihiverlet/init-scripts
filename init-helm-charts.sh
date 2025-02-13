@@ -7,3 +7,6 @@ git clone https://github.com/InseeFrLab/helm-charts-automation.git
 git clone https://github.com/InseeFrLab/helm-charts-shiny-apps.git
 git clone https://github.com/InseeFrLab/helm-charts-miscellaneous.git
 git clone https://inseefrlab.github.io/helm-charts-datascience
+
+pip install pre-commit
+ls | xargs -I{} bash -c "cd {} && pre-commit install"
