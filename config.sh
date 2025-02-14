@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sudo apt update
+
 #configure bashrc to add aliases
 sudo tee -a /etc/bash.bashrc << EOT
 # kube aliases
