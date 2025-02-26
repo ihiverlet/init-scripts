@@ -9,4 +9,4 @@ git clone https://github.com/InseeFrLab/helm-charts-miscellaneous.git
 git clone https://inseefrlab.github.io/helm-charts-datascience
 
 pip install pre-commit
-ls | xargs -I{} bash -c "cd {} && pre-commit install"
+ls -d | xargs -I{} bash -c "cd {} && pre-commit install"
