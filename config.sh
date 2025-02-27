@@ -66,3 +66,5 @@ EOT
 if command -v code-server; then
   code-server --install-extension dvirtz.parquet-viewer
 fi
+
+pip install pre-commit
