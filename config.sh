@@ -48,6 +48,9 @@ alias ga='git add'
 # divers
 alias stp='sudo !! '
 
+# install gh cli
+sudo apt install gh
+
 
 # configure git
 git config --global diff.algorithm histogram
@@ -56,6 +59,7 @@ git config --global push.autoSetupRemote true
 # try 
 git config --global help.autocorrect prompt
 git config --global merge.conflictstyle zdiff3
+
 
 
 EOT
