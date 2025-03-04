@@ -9,3 +9,5 @@ duckdb -c "CREATE OR REPLACE PERSISTENT SECRET aaaaa( \
     ENDPOINT '"$AWS_S3_ENDPOINT"', \
     URL_STYLE '"$PATH_STYLE"' \
 );"
+
+chown -R ${USERNAME}:${GROUPNAME} ${HOME}/.duckdb
