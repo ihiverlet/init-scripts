@@ -18,6 +18,8 @@ alias kdel='kubectl delete'
 alias kl='kubectl logs'
 alias kex='kubectl exec -it'
 alias kpf='kubectl port-forward'
+alias ksc='kubectl config set-context --current --namespace'
+alias ksci='kubectl config set-context --current --namespace user-inesh'
 
 # helm aliases
 alias h='helm'
