@@ -1,6 +1,8 @@
 #!/bin/sh
 
 sudo apt update
+# install gh cli
+sudo apt install gh
 
 #configure bashrc to add aliases
 sudo tee -a /etc/bash.bashrc << EOT
@@ -49,10 +51,6 @@ alias ga='git add'
 
 # divers
 alias stp='sudo !! '
-
-# install gh cli
-sudo apt install gh
-
 
 # configure git
 git config --global diff.algorithm histogram
