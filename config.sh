@@ -79,4 +79,5 @@ EOT
 #add extension to vscode 
 if command -v code-server; then
   code-server --install-extension dvirtz.parquet-viewer
+  jq '. + {"workbench.startupEditor": "terminal" }' ${HOME}/.local/share/code-server/User/settings.json > ${HOME}/tmp.settings.json  && mv ${HOME}/tmp.settings.json ${HOME}/.local/share/code-server/User/settings.json
 fi
